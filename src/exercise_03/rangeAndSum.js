@@ -8,7 +8,7 @@ export function range(start, end) {
   // * Please do NOT modify the signature of the function.
 
   var array = [];
-  if (start == end)
+  if (start === end)
     return array;
   else if (start < end) {
     for (start; start < end; start++) {
@@ -32,11 +32,11 @@ export function sum(...numbers) {
   //
   // * Please implement this function and pass all the tests in range_and_array_spec.js.
   // * Please do NOT modify the signature of the function.
-  if (numbers.length == 0) {
+  if (numbers.length === 0) {
     return 0;
   }
   else if (numbers.length > 0) {
-    var total = 0;
+    let total = 0;
     numbers.forEach(element => {
       total += element;
     });
