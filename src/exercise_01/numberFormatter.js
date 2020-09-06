@@ -12,9 +12,9 @@ export default function formatNumber(number, option) {
   // * Please do NOT modify the signature of the function.
 
   var format = number.toFixed(2);
-  if (option != null) {
-    if (option.currency == true) {
-      format = "$ " + format;
+  if (option !== null) {
+    if (option.currency === true) {
+      format = '$ ' + format;
     }
   }
   return format;
