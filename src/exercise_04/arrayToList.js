@@ -8,15 +8,15 @@ export default function arrayToList(array) {
 
 
   if (array === undefined) {
-    throw 'Creating list from undefined array';
+    throw new Error('Creating list from undefined array');
   }
 
   if (array === null) {
-    throw 'Creating list from undefined array';
+    throw new Error('Creating list from undefined array');
   }
 
   if (array.length === 0) {
-    throw 'Creating list from empty array';
+    throw new Error('Creating list from empty array');
   }
 
   const list = new Array();
