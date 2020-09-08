@@ -15,39 +15,6 @@ export default function waitForAll(...promises) {
     }
   });
 
-
-
-
-  // const results = [];
-  // let promisesCompleted = 0;
-  // return new Promise((resolve, reject) => {
-  //   promises.forEach((promise, index) => {
-  //     promise.then((val) => {
-  //       results[index] = val;
-  //       // console.log(promises);
-  //       // console.log(promise);
-  //       promisesCompleted += 1;
-  //       if (promisesCompleted === promises.length) {
-  //         resolve(results);
-  //       }
-  //     })
-  //       .finally(() => {
-
-  //         if (val === promises.length - 1 && promisesCompleted !== promises.length) {
-  //           reject();
-  //         // results.push = error;
-  //         // if (promisesCompleted === promises.length) {
-  //         //   console.log(error);
-  //         //   // resolve(error);
-  //         //   reject(error);
-
-  //         }
-
-  //       })
-  //   })
-  // });
-
-
   promises.forEach((promise) => {
     if (!(promise instanceof Promise)) {
       throw Error('Not all elements are promises.');
